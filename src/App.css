@@ -1,0 +1,103 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: 12px solid #222222;
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+.panel {
+    padding: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel:not(:last-child) {
+    border-right: 2px solid #222222;
+}
+
+h1, h2 {
+    color: #222222;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    background-color: #c7c7c7;
+    border: 2px solid #111111;
+    color: #222222;
+}
+
+label {
+    margin-bottom: 12px;
+    color: #222222;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+    background-color: #c7c7c7;
+    border: 2px solid #222222;
+    border-radius: 12px;
+    color: #222222;
+}
+
+input[type="file"] {
+    margin-bottom: 16px;
+    color: #222222;
+}
+
+button {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    background-color: #c7c7c7;
+    color: #222222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #888787;
+}
+
+p {
+    margin: 1;
+    padding: 10px;
+    background-color: #585858;
+    color: #161616;
+    border: 2px solid #808080;
+    border-radius: 12px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .panel {
+        border-right: none;
+        border-bottom: 2px solid #111111;
+    }
+}
+
+
+
+
+
